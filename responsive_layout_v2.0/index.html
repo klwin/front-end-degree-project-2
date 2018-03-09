@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Layout Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+</head>
+<body>
+<!--Main Navigation-->
+	<nav class="main-nav">
+		<h2 class="name">Student Name</h2>
+    	<ul class="nav">
+         	<li><a href="#">HOME</a></li>
+          	<li><a href="#portfolio">PORTFOLIO</a></li>
+          	<li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+<!--Header-->
+    <header class="header">
+    	<picture class="profile-image">
+    		<source media="(min-width: 1024px)" srcset="images/responsive-layout-profile.png">
+    		<source media="(min-width: 768px)" srcset="images/responsive-layout-medium.png">
+    		<img src="images/responsive-layout-profile-small.png" alt="profile image">
+    	</picture>
+    	<p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    </header>
+
+<!--Main Section-->
+	<main id="portfolio">
+		<h2>PORTFOLIO</h2>
+		<div class="row">
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-1-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-1-small.png">
+					<img src="images/portfolio-1-medium.png" alt="Marketing Page">
+				</picture>
+				<h3>Marketing Page</h3>
+				<p>This project shows the front page of a <br> marketing website meant for a specific<br> business I'm interested in.</p>
+			</section>
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-2-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-2-small.png">
+					<img src="images/portfolio-2-medium.png" alt="Search Page">
+				</picture>
+				<h3>Search Page</h3>
+				<p>This searches through a specific <br> database to find information that the <br> user is trying to look up.</p>
+			</section>
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-3-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-3-small.png">
+					<img src="images/portfolio-3-medium.png" alt="Travel App">
+				</picture>
+				<h3>Travel App</h3>
+				<p>This project compares travel times<br> based on different transportation <br> methods and tells you the best one.</p>
+			</section>
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-4-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-4-small.png">
+					<img src="images/portfolio-4-medium.png" alt="Map of Favourite Spots">
+				</picture>
+				<h3>Map of Favourite Spots</h3>
+				<p>This projects uses mapping apis to plot <br> points for my favourite spots in the city <br> for a do-it-yourself walking tour.</p>
+			</section>
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-5-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-5-small.png">
+					<img src="images/portfolio-5-medium.png" alt="Photo Gallery">
+				</picture>
+				<h3>Photo Gallery</h3>
+				<p>This projects shows pictures from a <br> recent trip to the viewer and allows <br> them to easily navigate through photos.</p>
+			</section>
+			<section class="col">
+				<picture class="portfolio-image">
+					<source media="(min-width: 768px)" srcset="images/portfolio-6-medium.png">
+					<source media="(min-width: 320px)" srcset="images/portfolio-6-small.png">
+					<img src="images/portfolio-6-medium.png" alt="Calculator">
+				</picture>
+				<h3>Calculator</h3>
+				<p>Someone can enter in the numbers <br> they want, and press the big blue <br> button and get the result.</p>
+			</section>
+		</div>
+	</main>
+
+<!--Footer-->
+	<footer id="contact">
+		<h2>CONTACT</h2>
+		<p class="footer ender">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+		<p class="footer">Phone <span>+1 (111)555-1234</span></p>
+		<p class="footer">Phone <span>email@yoursite.com</span></p>
+		<p>&nbsp;</p>
+		<hr>
+		<div class="footer-nav">
+			<h2 class="footer-h2">Student Name</h2>
+			<ul class="nav-footer">
+				<li><a href="#" class="second-footer-nav"></a></li>
+				<li><a href="#portfolio" class="third-footer-nav"></a></li>
+				<li><a href="#contact" class="fourth-footer-nav"></a></li>
+				<li class="fifth-footer-nav"><a href="#">BACK TO TOP</a></li>
+			</ul>
+	</div>
+	</footer>
+</body>
+</html>

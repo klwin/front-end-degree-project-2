@@ -1,0 +1,251 @@
+/* Global CSS */
+* {	
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	line-height: 1; 
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f7f5f0;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+}
+
+
+li {
+	list-style: none;
+}
+
+span {
+	color: #333;
+	font-weight: bold;
+}
+
+.nav li, main {
+	background-color: #fff;
+}
+
+.intro, .footer, .footer1 {
+	color: #999;
+	font-size: 1.2rem;
+}
+
+.intro, p {
+	line-height: 1.5;
+	display: block;
+}
+
+hr {
+	margin: 0 2%;
+}
+
+h2 {
+	padding: 3rem 0 2rem 0;
+}
+
+img {
+	margin: 1rem 0;
+}
+
+h3, p, section {
+	padding-bottom: 1rem;
+}
+
+.main-nav, 
+.header, 
+main,
+.footer,
+.footer-nav {
+	padding: 0 2%;
+}
+
+/* Links CSS */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Main Navigation */
+.main-nav {
+	background-color: #333;
+	padding-bottom: 0.5rem; 
+}
+
+.nav, h2, .nav-footer {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1rem;
+	font-weight: bold;
+	color: black;
+}
+
+.main-nav h2 {
+	color: white;
+}
+
+.nav li {
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.nav a {
+	display: block;
+}
+
+.nav a:hover {
+	color: gray;
+}
+
+.name {
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+.profile-image {
+	margin-top: 2rem;
+}
+
+/* Header Section */
+.intro {
+	padding-top: 1rem; 
+	padding-bottom: 3rem;
+}
+
+/* Main Section */
+.portfolio-image:hover {
+	opacity: 0.5;
+}
+
+/* footer */
+.footer-nav, .nav-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-h2 {
+	padding: 2rem 0;
+	font-size: 1.2rem;
+}
+
+.footer {
+	padding-bottom: 1rem;
+}
+
+.ender {
+	padding-bottom: 2rem;
+}
+
+/* Media Queries (768 px) */
+@media screen and (min-width: 768px) {
+
+	/* Main Navigation */
+	.nav, 
+	.header, 
+	.row, 
+	.nav-footer,
+	.footer-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.nav{
+		margin-bottom: 2rem;
+	}
+
+	.header {
+		margin-bottom: 2rem;
+		justify-content: space-between;
+	}
+
+	.profile-image {
+		order: 1;
+		margin: 0;
+	}
+
+	.name {
+		padding: 2rem 0;
+	}
+
+	.nav li {
+		background-color: #333;
+	}
+
+	.nav li, .nav a {
+		color: white;
+	}
+
+	/* Main Section */
+	.row, .footer-nav, .nav-footer {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	/* Footer Section */
+	.ender {
+		padding-right: 20%;
+		padding-left: 20%;
+	}
+
+	.second-footer-nav::after {
+		content: "HOME";
+	}
+
+	.third-footer-nav::after {
+		content: "PORTFOLIO";
+	}
+
+	.fourth-footer-nav::after {
+		content: "CONTACT";
+	}
+
+	.fifth-footer-nav {
+		display: none;
+	}
+
+	.nav-footer li {
+		font-size: 1rem;
+		margin-left: 1rem; 
+	}
+}
+
+/* Media Queries (1024 px) */
+@media screen and (min-width: 1024px) {
+
+	main, footer {
+		margin: 0 2%;
+	}
+
+	/* Main Navigation*/
+	.main-nav {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		align-items: flex-end;
+	}
+
+	/* Header Section */
+		.intro {
+			padding: 1rem 20% 0 0;
+		}
+	/* Main Section */
+
+	.col {
+		flex: 1 33.3%;
+	}
+
+}
+
+
+
