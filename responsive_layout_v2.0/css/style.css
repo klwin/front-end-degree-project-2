@@ -235,6 +235,9 @@ a {
 		align-items: flex-end;
 	}
 
+	.nav {
+		margin-bottom: 2%;
+	}
 	/* Header Section */
 		.intro {
 			padding: 1rem 20% 0 0;
